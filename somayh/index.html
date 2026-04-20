@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>متجر سومي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🛍️ متجر دانه</h1>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>أهلاً في متجري ✨</h2>
+    <p>اختيارات أنيقة تناسب ذوقك</p>
+</section>
+
+<section id="products" class="products">
+    <h2>المنتجات</h2>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200">
+        <h3>شنطة أنيقة</h3>
+        <p>150 ريال</p>
+        <button onclick="addToCart('شنطة أنيقة')">أضف للسلة</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200">
+        <h3>ساعة فخمة</h3>
+        <p>300 ريال</p>
+        <button onclick="addToCart('ساعة فخمة')">أضف للسلة</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200">
+        <h3>عطر نسائي</h3>
+        <p>220 ريال</p>
+        <button onclick="addToCart('عطر نسائي')">أضف للسلة</button>
+    </div>
+
+</section>
+<section class="cart">
+    <h2>🛒 السلة</h2>
+    <ul id="cartList"></ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>تواصل معنا</h2>
+    <form onsubmit="sendMsg(event)">
+        <input type="text" placeholder="اسمك" required>
+        <input type="email" placeholder="إيميلك" required>
+        <textarea placeholder="رسالتك"></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 متجر سومي</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
